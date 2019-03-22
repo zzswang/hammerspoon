@@ -66,3 +66,4 @@
 * <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>D</kbd> `Finder`
 * <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>Y</kbd> `Activity Monitor`
 * <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>P</kbd> `System Preferences`
+* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>V</kbd> `Visual Studio Code`
