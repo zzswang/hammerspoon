@@ -58,12 +58,3 @@
 
 * <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>L</kbd> 锁屏
 
-### 快速启动
-
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>I</kbd> `IntelliJ IDEA CE`
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>C</kbd> `Google Chrome`
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>K</kbd> `iTerm`
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>D</kbd> `Finder`
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>Y</kbd> `Activity Monitor`
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>P</kbd> `System Preferences`
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>V</kbd> `Visual Studio Code`
