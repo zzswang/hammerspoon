@@ -14,5 +14,6 @@ function reloadConfig(files)
 	end
 end
 
+-- 监视变化
 pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon", reloadConfig):start()
 alert.show("Hammerspoon Config Reloaded")

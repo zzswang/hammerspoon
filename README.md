@@ -1,61 +1,64 @@
-# Hammerspoon Configuration
+## Hammerspoon
 
-## Usage
+我希望可以在工作的时候，非常专注。
+而专注写代码最好的方式就是全键盘操作。
 
-1. Install [Hammerspoon](http://www.hammerspoon.org/)
-2. `git clone https://github.com/greyby/hammerspoon.git ~/.hammerspoon`
+于是开始写自己的 Hammerspoon 来适配这种工作方式。
 
-## Modifier keys
-|           |  Key           |
-| --------- | -------------- |
-| <kbd>⇧</kbd> | Shift       |
-| <kbd>⌃</kbd> | Control   	 |
-| <kbd>⌥</kbd> | Option 		 |
-| <kbd>⌘</kbd> | Command   	 |
+> hyper 键： <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd>
 
-## Features
+## 使用方法
 
-### Window Management
+1. 安装 [Hammerspoon](http://www.hammerspoon.org/)
+2. `git clone git@github.com:zzswang/hammerspoon.git ~/.hammerspoon`
 
-#### Split Screen Actions
+> fork 以后可以自行修改，欢迎提 issue 和 PR
 
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>←</kbd> Left half
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>→</kbd> Right half
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>↑</kbd> Top half
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>↓</kbd>	Bottom half
+## 快捷键说明
 
-#### Quarter Screen Actions
+### mac 自带的常用快捷键
 
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⇧</kbd> + <kbd>←</kbd> Left top quarter
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⇧</kbd> + <kbd>→</kbd> Right bottom quarter
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⇧</kbd> + <kbd>↑</kbd> Right top quarter
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⇧</kbd> + <kbd>↓</kbd> Left bottom quarter
+mac 自身已经带了很多有用的快捷键，没有必要再重复开发
 
-#### Multiple Monitor
-
-##### Move Cursor
-
-* <kbd>⌃</kbd><kbd>⌥</kbd> + <kbd>←</kbd> Move cursor to next monitor
-* <kbd>⌃</kbd><kbd>⌥</kbd> + <kbd>→</kbd> Move cursor to previous monitor
-
-##### Move Windows
-
-* <kbd>⇧</kbd><kbd>⌥</kbd> + <kbd>←</kbd> Move active window to previous monitor
-* <kbd>⇧</kbd><kbd>⌥</kbd> + <kbd>→</kbd> Move active window to next monitor
-* <kbd>⇧</kbd><kbd>⌥</kbd> + <kbd>1</kbd> Move active window to monitor 1 and maximize the window
-* <kbd>⇧</kbd><kbd>⌥</kbd> + <kbd>2</kbd> Move active window to monitor 2 and maximize the window
+| 快捷键                                  | 功能描述                                                      |
+| --------------------------------------- | ------------------------------------------------------------- |
+| <kbd>⌘</kbd> + <kbd>h</kbd>             | 隐藏当前窗口                                                  |
+| <kbd>⌘</kbd> + <kbd>m</kbd>             | 最小化当前窗口（无法通过 <kbd>⌘</kbd> + <kbd>tab</kbd> 恢复） |
+| <kbd>⌘</kbd> + <kbd>w</kbd>             | 关闭当前窗口                                                  |
+| <kbd>⌘</kbd> + <kbd>q</kbd>             | 退出当前程序                                                  |
+| <kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>h</kbd> | 隐藏当前窗口之外的其他窗口                                    |
+| <kbd>⌃</kbd><kbd>⌘</kbd> + <kbd>f</kbd> | 全屏当前窗口                                                  |
+| <kbd>⌃</kbd><kbd>⌘</kbd> + <kbd>q</kbd> | 锁定屏幕                                                  |
 
 
-#### Other
+### 窗口在当前屏幕移动、尺寸缩放、最小化
 
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>F</kbd> Full Screen
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>M</kbd> Maximize Window
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>C</kbd> Window Center
+| 快捷键                      | 功能描述                                |
+|-----------------------------|----------------------------------------|
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>←</kbd> | 当前窗口移动到屏幕左侧，不改变高度，继续按宽度依次从 2/3 1/2 1/3 之间切换 |
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>→</kbd> | 当前窗口移动到屏幕右侧，不改变高度，继续按宽度依次从 2/3 1/2 1/3 之间切换 |
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>↑</kbd> | 当前窗口移动到屏幕上方，不改变宽度，继续按高度依次从 2/3 1/2 1/3 之间切换 |
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>↓</kbd> | 当前窗口移动到屏幕下方，不改变宽度，继续按高度依次从 2/3 1/2 1/3 之间切换 |
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>w</kbd> | 当前窗口宽度撑满屏幕，不改变高度，再按一次恢复 |
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>h</kbd> | 当前窗口高度撑满屏幕，不改变宽度，再按一次恢复 |
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>f</kbd> | 当前窗口撑满屏幕，再按一次恢复 |
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>c</kbd> | 当前窗口居中，再按一次恢复原来的位置 |
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>=</kbd> | 当前窗口尺寸放大 10%，如果高度已经顶满，宽度继续放大 |
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>-</kbd> | 当前窗口尺寸缩小 10%，最小宽度和最小高度分别是屏幕的 1/3 |
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>z</kbd> | 禅模式，隐藏所有其它窗口，将当前窗口居中并优化宽度和高度，再按一次恢复原来的位置和其它窗口 |
+
+### 在多个显示器之间移动
+
+| 快捷键  | 功能描述                   |
+| ------- | -------------------------- |
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>[</kbd> | 当前窗口向上一个显示器移动 |
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>]</kbd> | 当前窗口向下一个显示器移动 |
 
 
-* <kbd>⇧</kbd><kbd>⌥</kbd> + <kbd>H</kbd>  Switch active window
-* <kbd>⇧</kbd><kbd>⌥</kbd> + <kbd>/</kbd>  Display a keyboard hint for switching focus to each window
+### 程序切换
 
-### System Tools
-
-* <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>L</kbd> Lock Screen
+| 快捷键                                              | 功能描述                                                         |
+| --------------------------------------------------- | ---------------------------------------------------------------- |
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>/</kbd> | 显示所有显示器当前桌面的程序，包括隐藏窗口，并提供快捷键可以切换 |
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>,</kbd> | 在当前打开的窗口之间切换                                         |
+| <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>.</kbd> | 在当前打开的窗口之间切换                                         |
